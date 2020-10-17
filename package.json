@@ -1,0 +1,29 @@
+{
+  "name": "app-web-landing",
+  "version": "1.0.0",
+  "description": "Landing page for the FocusMark website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/focusmark/app-web-landing.git"
+  },
+  "author": "Scionwest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/focusmark/app-web-landing/issues"
+  },
+  "homepage": "https://github.com/focusmark/app-web-landing#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bulma": "^0.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.2"
+  }
+}

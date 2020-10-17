@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FocusMark</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body class="has-navbar-fixed-top">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://focusmark.app">
+                <span class="has-text-primary is-size-3 has-text-weight-semibold">FocusMark</span>
+              </a>
+          
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarContent" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                  Home
+                </a>
+          
+                <a href="features.html" class="navbar-item">
+                  Features
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    More
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Documentation
+                    </a>
+                    <a class="navbar-item">
+                      About Us
+                    </a>
+                    
+                    <hr class="navbar-divider">
+
+                    <a class="navbar-item">
+                      Developer API
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-dark">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <section class="section">
+              <div class="columns">
+                  <div class="column is-three-fifths is-offset-one-fifth">
+                    <h1 class="title is-size-1">Unlock your productivity with an open platform!</h1>
+                    <button class="button is-primary">Coming Soon!</button>
+                  </div>
+              </div>
+          </section>
+    </body>
+</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length === 0) {
+    return;
+}
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
